@@ -89,6 +89,19 @@ class Lista:
         else:
             print(self.minhaLista[posicao])
 
+    def calcular_determinante(self):
+        for index in range(9):
+            self.minhaLista.append(int(input(f'{index + 1}º posição: ')))
+
+        linha1 = self.minhaLista[0] * self.minhaLista[4] * self.minhaLista[8]
+        linha2 = self.minhaLista[1] * self.minhaLista[5] * self.minhaLista[6]
+        linha3 = self.minhaLista[2] * self.minhaLista[3] * self.minhaLista[7]
+        linha4 = (self.minhaLista[6] * self.minhaLista[4] * self.minhaLista[2]) * - 1
+        linha5 = (self.minhaLista[7] * self.minhaLista[5] * self.minhaLista[0]) * - 1
+        linha6 = (self.minhaLista[8] * self.minhaLista[3] * self.minhaLista[1]) * - 1
+
+        print(linha1 + linha2 + linha3 + linha4 + linha5 + linha6)
+
 
 def main():
     L1 = Lista()
@@ -138,6 +151,7 @@ def main():
             L1.imprimir_da_posicao()
 
         elif opcao == 10:
+            L1.calcular_determinante()
             break
 
         else:
