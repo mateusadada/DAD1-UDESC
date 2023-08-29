@@ -5,6 +5,91 @@ class Lista:
         self.inicio = None
         self.fim = None
 
+    def imprimir_tudo(self):
+        if len(self.minhaLista) == 0:
+            print('Vazio')
+        else:
+            for value in self.minhaLista:
+                print(value, end=' ')
+
+    def inserir_inicio(self):
+        valor = str(input('Inserir qual valor? '))
+        self.minhaLista.insert(0, valor)
+        self.inicio = self.minhaLista[0]
+        self.fim = self.minhaLista[len(self.minhaLista) - 1]
+
+    def remover_inicio(self):
+        if len(self.minhaLista) == 0:
+            print('Erro')
+        else:
+            self.minhaLista.pop(0)
+
+            if len(self.minhaLista) == 0:
+                self.inicio = None
+                self.fim = None
+            else:
+                self.inicio = self.minhaLista[0]
+                self.fim = self.minhaLista[len(self.minhaLista) - 1]
+
+    def inserir_final(self):
+        valor = str(input('Inserir qual valor? '))
+        self.minhaLista.append(valor)
+        self.inicio = self.minhaLista[0]
+        self.fim = self.minhaLista[len(self.minhaLista) - 1]
+
+    def remover_final(self):
+        if len(self.minhaLista) == 0:
+            print('Erro')
+        else:
+            self.minhaLista.pop()
+
+            if len(self.minhaLista) == 0:
+                self.inicio = None
+                self.fim = None
+            else:
+                self.inicio = self.minhaLista[0]
+                self.fim = self.minhaLista[len(self.minhaLista) - 1]
+
+    def excluir_tudo(self):
+        self.minhaLista.clear()
+        self.inicio = None
+        self.fim = None
+
+    def inserir_na_posicao(self):
+        index = int(input('Inserir em qual posição? '))
+        value = str(input('Qual o valor? '))
+        self.minhaLista.insert(index, value)
+        self.inicio = self.minhaLista[0]
+        self.fim = self.minhaLista[len(self.minhaLista) - 1]
+
+    def remover_da_posicao(self):
+        posicao = int(input('Remover de qual posição? '))
+
+        if posicao < 0 or posicao >= len(self.minhaLista):
+            print('Posição inválida!')
+        elif len(self.minhaLista) == 0:
+            print('Erro')
+        else:
+            self.minhaLista.remove(self.minhaLista[posicao])
+
+            if len(self.minhaLista) == 0:
+                self.inicio = None
+                self.fim = None
+            else:
+                self.inicio = self.minhaLista[0]
+                self.fim = self.minhaLista[len(self.minhaLista) - 1]
+
+    def imprimir_da_posicao(self):
+        posicao = int(input('Imprimir de qual posição? '))
+
+        if posicao < 0 or posicao >= len(self.minhaLista):
+            print('Posição inválida!')
+        elif len(self.minhaLista) == 0:
+            print('Erro')
+        else:
+            print(self.minhaLista[posicao])
+
+
 def main():
     L1 = Lista()
     
@@ -22,33 +107,42 @@ def main():
         print("10- Calcular determinante")
         print("11- Sair")
         print("")
-        print("Opção: ")
+        print("Opção: ", end='')
         opcao = int(input())
+
         if opcao == 1:
-            pass
+            L1.inserir_inicio()
+
         elif opcao == 2:
-            pass
+            L1.remover_inicio()
+
         elif opcao == 3:
-            pass
+            L1.inserir_final()
+
         elif opcao == 4:
-            pass
+            L1.remover_final()
+
         elif opcao == 5:
-            pass
+            L1.imprimir_tudo()
+
         elif opcao == 6:
-            pass
+            L1.excluir_tudo()
+
         elif opcao == 7:
-            pass
+            L1.inserir_na_posicao()
+
         elif opcao == 8:
-            pass
+            L1.remover_da_posicao()
+
         elif opcao == 9:
-            pass
+            L1.imprimir_da_posicao()
+
         elif opcao == 10:
             break
+
         else:
             break
     
 
 if __name__ == "__main__":
     main()
-
-
