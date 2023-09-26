@@ -11,6 +11,50 @@ class Fila:
         self.inicio = None
         self.fim = None
 
+    def enfileirar(self, valor):
+        novoNo = No(valor)
+        if self.inicio is None and self.fim is None:
+            self.inicio = novoNo
+            self.fim = self.inicio
+        else:
+            self.fim.proximo = novoNo
+            self.fim = novoNo
+
+    def desenfileirar(self):
+        if self.inicio is None:
+            print('Erro')
+        else:
+            self.inicio = self.inicio.proximo
+            if self.inicio is None:
+                self.fim = self.inicio
+
+    def imprimir_inicio(self):
+        if self.inicio is None:
+            print('Vazio')
+        else:
+            print(self.inicio.dado)
+
+    def imprimir_fim(self):
+        if self.fim is None:
+            print('Vazio')
+        else:
+            print(self.fim.dado)
+
+    def imprimir_tudo(self):
+        if self.inicio is None and self.fim is None:
+            print('Vazio')
+        else:
+            auxiliar = self.inicio
+            while auxiliar is not None:
+                print(auxiliar.dado, end=' ')
+                auxiliar = auxiliar.proximo
+
+    def excluir_tudo(self):
+        while self.inicio is not None:
+            self.inicio = self.inicio.proximo
+        self.fim = self.inicio
+
+
 def main():
     f1 = Fila()
     
@@ -26,18 +70,25 @@ def main():
         print("")
         print("Opção: ")
         opcao = int(input())
+
         if opcao == 1:
-            pass
+            f1.enfileirar(str(input('Digite um valor para enfileirar: ')))
+
         elif opcao == 2:
-            pass
+            f1.desenfileirar()
+
         elif opcao == 3:
-            pass
+            f1.imprimir_inicio()
+
         elif opcao == 4:
-            pass
+            f1.imprimir_fim()
+
         elif opcao == 5:
-            pass
+            f1.imprimir_tudo()
+
         elif opcao == 6:
-            pass
+            f1.excluir_tudo()
+
         else:
             break
     
