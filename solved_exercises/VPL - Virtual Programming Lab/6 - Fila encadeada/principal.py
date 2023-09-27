@@ -13,12 +13,12 @@ class Fila:
 
     def enfileirar(self, valor):
         novoNo = No(valor)
-        if self.inicio is None and self.fim is None:
+        if self.inicio is None:
             self.inicio = novoNo
-            self.fim = self.inicio
         else:
             self.fim.proximo = novoNo
-            self.fim = novoNo
+
+        self.fim = novoNo
 
     def desenfileirar(self):
         if self.inicio is None:
