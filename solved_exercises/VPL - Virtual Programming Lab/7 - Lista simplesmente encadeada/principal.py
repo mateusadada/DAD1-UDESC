@@ -11,7 +11,7 @@ class Lista:
         self.inicio = None
         # self.fim = None #PROIBIDO!!!!
 
-    def inserir_inicio(self, valor=''):
+    def inserir_inicio(self, valor):
         novoNo = No(valor)
         novoNo.proximo = self.inicio
         self.inicio = novoNo
