@@ -6,43 +6,108 @@ class No:
         self.dado = dado
         self.direita = None
         self.esquerda = None
-        
+
 
 class Arvore:
     def __init__(self):
         self.raiz = None
 
     def InserirDado(self, caminho, dado):
-        pass
+        if caminho is None:
+            caminho = No(dado)
+            return caminho
+
+        else:
+            if caminho.dado < dado:
+                caminho.direita = self.InserirDado(caminho.direita, dado)
+                return caminho
+
+            elif caminho.dado > dado:
+                caminho.esquerda = self.InserirDado(caminho.esquerda, dado)
+                return caminho
+
+            else:
+                return caminho
 
     def ProcurarDado(self, caminho, dado):
-        pass
+        if caminho is not None:
+            if dado == caminho.dado:
+                print(caminho.dado, end=' ')
+                return caminho.dado
+
+            if self.ProcurarDado(caminho.esquerda, dado) == 0:
+                return self.ProcurarDado(caminho.direita, dado)
+
+            else:
+                return caminho.dado
+
+        return print('0')
 
     def RemoverDado(self, caminho, dado):
-        pass
+        if caminho is None:
+            print('0')
+            return None
+
+        elif caminho.dado < dado:
+            caminho.direita = self.RemoverDado(caminho.direita, dado)
+            return caminho
+
+        elif caminho.dado > dado:
+            caminho.esquerda = self.RemoverDado(caminho.esquerda, dado)
+            return caminho
+
+        else:
+            if (caminho.direita is None) and (caminho.esquerda is None):
+                return None
+            else:
+                return caminho
 
     def PreOrdem(self, caminho):
-        pass
+        if caminho is not None:
+            print(caminho.dado, end=' ')
+            self.PreOrdem(caminho.esquerda)
+            self.PreOrdem(caminho.direita)
 
     def EmOrdem(self, caminho):
-        pass
+        if caminho is not None:
+            self.EmOrdem(caminho.esquerda)
+            print(caminho.dado, end=' ')
+            self.EmOrdem(caminho.direita)
 
     def PosOrdem(self, caminho):
-        pass
+        if caminho is not None:
+            self.PosOrdem(caminho.esquerda)
+            self.PosOrdem(caminho.direita)
+            print(caminho.dado, end=' ')
 
     def ImprimirRaiz(self):
-        pass
+        if self.raiz is None:
+            print('Vazio')
+        else:
+            print(self.raiz.dado)
 
     def ImprimirFolhas(self, caminho):
-        pass
+        if caminho is not None:
+            self.ImprimirFolhas(caminho.esquerda)
+            self.ImprimirFolhas(caminho.direita)
+            if (caminho.direita is None) and (caminho.esquerda is None):
+                print(caminho.dado, end=' ')
 
     def ImprimirAltura(self, caminho):
-        pass
+        if caminho is None:
+            return -1
+        else:
+            esquerda = self.ImprimirAltura(caminho.esquerda)
+            direita = self.ImprimirAltura(caminho.direita)
+        if esquerda > direita:
+            return esquerda + 1
+        else:
+            return direita + 1
 
     def ApagarTudo(self):
-        pass
+        self.raiz = None
 
-############################################################## 
+##############################################################
     # Código para imprimir a árvore
     def print_tree(self, root):
         res = []
@@ -66,13 +131,13 @@ class Arvore:
                 print(v, end="")
                 print("." * (base - 1), end="")
             print("|")
-            base //= 2     
+            base //= 2
 ###############################################################
 
-        
+
 def main():
     arv = Arvore()
-    
+
     while True:
         print("")
         print("1- Inserir número")
@@ -122,8 +187,7 @@ def main():
         else:
             arv.print_tree(arv.raiz)
             break
-    
-    
+
+
 if __name__ == "__main__":
     main()
-    
