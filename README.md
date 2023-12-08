@@ -1,6 +1,3 @@
-> [!IMPORTANT]
-> This [REPOSITORY](https://github.com/mateusadada/python-DAD1-UDESC) is in development. It's need to rename folder.
-
 <h1 align="center">Data Structure 1 - UDESC</h1>
 <div align="center"><i>A complete list of solved exercises and final project</i><br><br>
 <a href="https://github.com/mateusadada/DAD1-UDESC/stargazers"><img src="https://img.shields.io/github/stars/mateusadada/DAD1-UDESC" alt="Stars Badge"/></a>
