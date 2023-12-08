@@ -1,8 +1,8 @@
 > [!IMPORTANT]
-> This [README](https://github.com/mateusadada/python-DAD1-UDESC) is under development.
+> This [REPOSITORY](https://github.com/mateusadada/python-DAD1-UDESC) is in development. It's need to rename folder.
 
 <h1 align="center">Data Structure 1</h1>
-<div align="center"><i>A complete list of solved exercises and final work</i><br><br>
+<div align="center"><i>A complete list of solved exercises and final project</i><br><br>
 <a href="https://github.com/mateusadada/DAD1-UDESC/stargazers"><img src="https://img.shields.io/github/stars/mateusadada/DAD1-UDESC" alt="Stars Badge"/></a>
 <a href="https://github.com/mateusadada/DAD1-UDESC/network/members"><img src="https://img.shields.io/github/forks/mateusadada/DAD1-UDESC" alt="Forks Badge"/></a>
 <a href="https://github.com/mateusadada/DAD1-UDESC/pulls"><img src="https://img.shields.io/github/issues-pr/mateusadada/DAD1-UDESC" alt="Pull Requests Badge"/></a>
@@ -24,9 +24,11 @@
 
 ## 🚀 Starting
 
-Explain what's VPL.
+This repository contains the solved exercises from Introduction to Object-Oriented Programming course of second semester. The exercises have more complex and challenging concepts, as well as the use of classes. It was fundamental to improve my knowledge in this language and it also helped with my Bachelor's Degree in Information Systems at [UDESC](https://www.udesc.br/).
 
-This repository contains all the solved exercises from Introduction to Object-Oriented Programming course of second semester. The exercises have more complex and challenging concepts, as well as the use of classes. It was fundamental to improve my knowledge in this language and it also helped with my Bachelor's Degree in Information Systems at [UDESC](https://www.udesc.br/).
+[The exercises](https://github.com/mateusadada/DAD1-UDESC/tree/main/solved_exercises/VPL) were solved within the [VPL](https://vpl.dis.ulpgc.es/) because of the college. It is a platform that offers a virtual environment for teaching and practicing programming, allowing users to develop and execute code in various languages directly in the browser.
+
+[The final project](https://github.com/mateusadada/DAD1-UDESC/blob/main/final_work/heap_sort.py) was a presentation of the Heap Sort algorithm using slides as support material and the execution of code that was adapted from [Brilliant](https://brilliant.org/wiki/heap-sort/).
 
 ## 📚 Features
 
@@ -34,12 +36,8 @@ Used during the evolution of exercises:
 
 - Natural structures
 
-- Chained lists
-
-- Chained queues
-
-- Chained stacks
-
+- Linked lists, linked queues and linked stacks
+  
 - Balanced trees
 
 - Algorithms for manipulating structures
