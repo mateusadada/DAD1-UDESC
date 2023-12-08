@@ -28,7 +28,7 @@ This repository contains the solved exercises from Introduction to Object-Orient
 
 [The exercises](https://github.com/mateusadada/DAD1-UDESC/tree/main/solved_exercises/VPL) were solved within the [VPL](https://vpl.dis.ulpgc.es/) because of the college. It is a platform that offers a virtual environment for teaching and practicing programming, allowing users to develop and execute code in various languages directly in the browser.
 
-[The final project](https://github.com/mateusadada/DAD1-UDESC/blob/main/final_work/heap_sort.py) was a presentation of the Heap Sort algorithm using slides as support material and the execution of code that was adapted from [Brilliant](https://brilliant.org/wiki/heap-sort/).
+[The final project](https://github.com/mateusadada/DAD1-UDESC/blob/main/final_project/heap_sort.py) was a presentation of the Heap Sort algorithm using slides as support material and the execution of code that was adapted from [Brilliant](https://brilliant.org/wiki/heap-sort/).
 
 ## 📚 Features
 
