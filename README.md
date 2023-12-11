@@ -21,11 +21,9 @@
 
 ## 🚀 Starting
 
-This repository contains the solved exercises from Introduction to Object-Oriented Programming course of second semester. The exercises have more complex and challenging concepts, as well as the use of classes. It was fundamental to improve my knowledge in this language and it also helped with my Bachelor's Degree in Information Systems at [UDESC](https://www.udesc.br/).
+This repository contains the solved exercises from Data Structure 1 course in the third semester. [The exercises](https://github.com/mateusadada/DAD1-UDESC/tree/main/solved_exercises/VPL) have more complex and challenging concepts, as well as the use of classes. They were solved within the [VPL](https://vpl.dis.ulpgc.es/) because of the college. It is a platform that offers a virtual environment for teaching and practicing programming, allowing users to develop and execute code in various languages directly in the browser.
 
-[The exercises](https://github.com/mateusadada/DAD1-UDESC/tree/main/solved_exercises/VPL) were solved within the [VPL](https://vpl.dis.ulpgc.es/) because of the college. It is a platform that offers a virtual environment for teaching and practicing programming, allowing users to develop and execute code in various languages directly in the browser.
-
-[The final project](https://github.com/mateusadada/DAD1-UDESC/blob/main/final_project/heap_sort.py) was a presentation of the Heap Sort algorithm using slides as support material and the execution of code that was adapted from [Brilliant](https://brilliant.org/wiki/heap-sort/).
+[The final project](https://github.com/mateusadada/DAD1-UDESC/blob/main/final_project/heap_sort.py) was a presentation with [@ViniciusBeuther](https://github.com/ViniciusBeuther) of the Heap Sort algorithm using slides as support material and the execution of code that was adapted from [Brilliant](https://brilliant.org/wiki/heap-sort/). It was also necessary to grasp the concepts of Heapify to comprehend the entire functioning of the sorting process. It was fundamental to improve my knowledge in this language and it also helped with my Bachelor's Degree in Information Systems at [UDESC](https://www.udesc.br/).
 
 ## 📚 Features
 
@@ -41,7 +39,7 @@ Used during the evolution of exercises:
 
 ## 📋 Prerequisites
 
-You need to have the Python language on your machine along with an IDE (Integrated Development Environment) or a website that can run the codes.
+You need to have the Python language on your machine along with an IDE (Integrated Development Environment) or a website that can run the codes. For example:
 
 * [IDE PyCharm](https://www.jetbrains.com/pycharm/)
 * [IDE Visual Studio Code](https://code.visualstudio.com/)
