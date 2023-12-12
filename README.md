@@ -1,5 +1,5 @@
 <h1 align="center">Data Structure 1 - UDESC</h1>
-<div align="center"><i>A complete list of solved exercises and final project</i><br><br>
+<div align="center"><i>A complete list of solved exercises and the final project</i><br><br>
 <a href="https://github.com/mateusadada/DAD1-UDESC/stargazers"><img src="https://img.shields.io/github/stars/mateusadada/DAD1-UDESC" alt="Stars Badge"/></a>
 <a href="https://github.com/mateusadada/DAD1-UDESC/network/members"><img src="https://img.shields.io/github/forks/mateusadada/DAD1-UDESC" alt="Forks Badge"/></a>
 <a href="https://github.com/mateusadada/DAD1-UDESC/pulls"><img src="https://img.shields.io/github/issues-pr/mateusadada/DAD1-UDESC" alt="Pull Requests Badge"/></a>
