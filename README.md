@@ -27,7 +27,7 @@ This repository contains the solved exercises from Data Structure 1 course in th
 
 ## 📚 Features
 
-Used during the evolution of exercises:
+Used during the evolution of exercises and the final project:
 
 - Natural structures
 
