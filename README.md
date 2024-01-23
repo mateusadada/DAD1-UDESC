@@ -15,8 +15,8 @@
 - [Starting](#-starting)
 - [Features](#-features)
 - [Prerequisites](#-prerequisites)
-- [Built with](#%EF%B8%8F-built-with)
-- [Author](#%EF%B8%8F-author)
+- [Built with](#️-built-with)
+- [Author](#️-author)
 - [License](#-license)
 
 ## 🚀 Starting
@@ -30,11 +30,8 @@ This repository contains the solved exercises from Data Structure 1 course in th
 Used during the evolution of exercises and the final project:
 
 - Natural structures
-
 - Linked lists, linked queues and linked stacks
-  
 - Balanced trees
-
 - Algorithms for manipulating structures
 
 ## 📋 Prerequisites
