@@ -16,7 +16,7 @@
 - [Features](#-features)
 - [Prerequisites](#-prerequisites)
 - [Built with](#️-built-with)
-- [Author](#️-author)
+- [Authors](#️-authors)
 - [License](#-license)
 
 ## 🚀 Starting
@@ -48,9 +48,10 @@ You need to have the Python language on your machine along with an IDE (Integrat
 
 * [Python 3](https://www.python.org/) - The programming language used.
 
-## ✒️ Author
+## ✒️ Authors
 
 * **Mateus Adada** - *Developer and documentation* - [mateusadada](https://github.com/mateusadada)
+* **Vinicius E. Beuther** - *Developer* - [ViniciusBeuther](https://github.com/ViniciusBeuther)
 
 You can also see the list of all [collaborators](https://github.com/mateusadada/DAD1-UDESC/graphs/contributors) who participated in this project.
 
